@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #707070;
+}
+
+/* GLOBAL */
+.title{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+}
+.title h3{
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.title h3 span{
+    color: #ff6e65;
+}
+
+.title h3::before, .title h3::after{
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: #707070;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+}
+
+.title h3::before{
+    left: -20px;
+    bottom: -8px;
+}
+
+.title h3::after{
+    left: 20px;
+    bottom: -15px;
+}
