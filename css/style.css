@@ -10,6 +10,15 @@ body{
     color: #707070;
 }
 
+/* Set Color  */
+:root{
+    --blue-color:#0d369f;
+    --logo--color:#0d369f;
+    --header-color: #060606;
+    --bg-color: white;
+    --font--color: #707070;
+}
+
 /* GLOBAL */
 .title{
     text-align: center;
@@ -47,4 +56,201 @@ body{
 .title h3::after{
     left: 20px;
     bottom: -15px;
+}
+
+
+/* HEADER */
+header{
+    transition: all .4s;
+    height: 95px;
+    background-color: transparent;
+    display: grid;
+    align-items: center;
+}
+.header__fixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header.nav_fixed{
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0 0 0 / 5%);
+    height: 75px;
+    padding: 0;
+    z-index: 900 !important;
+}
+header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
+    box-shadow: none;
+    border-radius: 0;
+    padding: .5rem 1rem;
+}
+
+.header__top{
+    background-color: #0d369f;
+    padding: 14px 15px;
+}
+
+.header__top li{
+    list-style: none;
+}
+
+.header__left a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.93rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+}
+.header__left a i{
+    margin-right: 5px;
+}
+.header__top .fa-phone{
+    font-size: 12px;
+}
+.header__top a span{
+    transition: all .5s;
+}
+.header__top a span:hover{
+    color: #ff6e65;
+}
+.header__right a {
+    color: white;
+    margin-left: 30px;
+    font-size: 0.9rem;
+    transition: all .5s;
+}
+.header__right a:hover{
+    color: #ff6e65;
+}
+
+.header__bot .navbar{
+    padding: 1.2rem 1rem;
+}
+
+.header__bot .navbar-brand span{
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #0d369f;
+    margin-left: 3px;
+    transition: all .5s;
+    
+}
+.header__bot .navbar-brand span:hover{
+    color: #ff6e65;
+}
+#studiousNav .nav-item{
+    padding: 0 12px;
+}
+#studiousNav .nav-item.active .nav-link{
+    color: #ff6e65;
+}
+#studiousNav .navbar-nav a{
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: #060606 ;
+    font-weight: 500;
+    transition: all .5s;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+#studiousNav .navbar-nav .nav-link:hover{
+    color: #ff6e65;
+}
+
+#studiousNav .form-inline{
+    margin: 0 10px 0;
+}
+#studiousNav .form-inline input{
+    font-size: 0.93rem;
+    padding: 10px 45px 10px 14px;
+    border-radius: 30px;
+    border: 2px solid #eee;
+    outline: none;
+    box-shadow: none;
+    height: 45px;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+}
+#studiousNav .form-inline i{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: #0d369f;
+    font-size: .9rem;
+}
+
+#studiousNav .header__theme i{
+    font-size: 1.5rem;
+    transform: rotate(-25deg);
+    color: #0d369f;
+    cursor: pointer;
+}
+#studiousNav .navbar-nav .dropdown-menu{
+    transform: translateX(-40px);
+    background: white;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 20px 0 rgba(12, 12, 12, 6%);
+}
+#studiousNav .navbar-nav .dropdown-menu::before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 1px solid transparent;
+    display: block;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 99;
+}
+#studiousNav .navbar-nav .dropdown-item{
+    padding: 5px 24px;
+}
+
+.header__theme button{
+    padding: 0;
+}
+.dropdown-toggle::after{
+    color: white;
+    padding: 0 6px ;
+    margin: 0;
+    border: 0;
+}
+.fa-chevron-down{
+    font-size: 10px;
+    position: absolute;
+    top: 15px;  
+}
+/* Light Theme - Dark Theme */
+.btn:focus{
+    box-shadow: none;
+}
+#icon .fa-sun{
+    display: none;
+}
+
+.dark#myBody {
+    background-color: #161c2d;
+}
+.dark #icon .fa-sun{
+    display: block;
+}
+.dark #icon .fa-moon{
+    display: none;
+}
+.dark .header__bot .navbar-brand span{
+    color: white;
+}
+.dark #studiousNav .navbar-nav a{
+    color: white;
+}
+.dark #studiousNav .form-inline input{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.dark #studiousNav .form-inline input::placeholder{
+    color: white;
 }
