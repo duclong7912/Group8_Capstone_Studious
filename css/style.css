@@ -7,7 +7,7 @@
 html,
 body{
     font-family: 'Montserrat', sans-serif;
-    color: #707070;
+    
 }
 
 /* Set Color  */
@@ -56,18 +56,24 @@ body{
     margin-bottom: 3rem;
     padding-bottom: 1.5rem;
 }
-.title h3{
+
+.title span{
+    color: #ff6e65;
     font-size: 2.5rem;
     line-height: 3.125rem;
     font-weight: 600;
     position: relative;
 }
 
-.title h3 span{
-    color: #ff6e65;
+h3.title__main{
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: 600;
+    color: var(--header-color);
+    position: relative;
+    margin: 0;
 }
-
-.title h3::before, .title h3::after{
+h3.title__main::before, h3.title__main::after{
     content: '';
     width: 60px;
     height: 2px;
@@ -77,13 +83,13 @@ body{
     margin: 0 auto;
 }
 
-.title h3::before{
-    left: -20px;
+h3.title__main::before{
+    left: -50px;
     bottom: -8px;
 }
 
-.title h3::after{
-    left: 20px;
+h3.title__main::after{
+    left: -10px;
     bottom: -15px;
 }
 
@@ -384,6 +390,11 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     color: white;
     display: block;
     margin-bottom: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+.courses__content .courses__bg h4:hover{
+    color: #060606;
 }
 /* Responsive */
 @media (min-width: 1280px) {
