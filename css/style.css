@@ -17,7 +17,36 @@ body{
     --header-color: #060606;
     --bg-color: white;
     --font--color: #707070;
+    --placeholder: #707070;
+    --border-color: transparent;
 }
+#myBody{
+    background-color: var(--bg-color);
+}
+/* Light Theme - Dark Theme */
+.btn:focus{
+    box-shadow: none;
+}
+#icon .fa-sun{
+    display: none;
+}
+
+.dark #icon .fa-sun{
+    display: block;
+}
+.dark #icon .fa-moon{
+    display: none;
+}
+.dark{
+    --blue-color:#4867b0;
+    --logo--color: #fff;
+    --header-color: #fdfffc;
+    --bg-color: #161c2d;
+    --font--color: #b7b7b7;
+    --placeholder: white;
+    --border-color: rgba(255, 255, 255, 0.2);
+}
+
 
 /* GLOBAL */
 .title{
@@ -42,7 +71,7 @@ body{
     content: '';
     width: 60px;
     height: 2px;
-    background: #707070;
+    background: var(--font--color);
     position: absolute;
     right: 0;
     margin: 0 auto;
@@ -74,7 +103,7 @@ header{
     z-index: 999;
 }
 header.nav_fixed{
-    background-color: white;
+    background-color: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0 0 0 / 5%);
     height: 75px;
     padding: 0;
@@ -87,7 +116,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 }
 
 .header__top{
-    background-color: #0d369f;
+    background-color: var(--blue-color);
     padding: 14px 15px;
 }
 
@@ -132,7 +161,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 .header__bot .navbar-brand span{
     font-size: 1.625rem;
     font-weight: 600;
-    color: #0d369f;
+    color: var(--logo--color);
     margin-left: 3px;
     transition: all .5s;
     
@@ -149,7 +178,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 #studiousNav .navbar-nav a{
     font-size: 1rem;
     padding: .5rem 0;
-    color: #060606 ;
+    color: var(--header-color) ;
     font-weight: 500;
     transition: all .5s;
     cursor: pointer;
@@ -171,34 +200,52 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     box-shadow: none;
     height: 45px;
     font-family: 'Oxygen', sans-serif;
-    color: white;
+    background: transparent;
+    color: var(--placeholder);
 }
+
+#studiousNav .form-inline input::placeholder{
+    color: var(--placeholder);
+}
+
 #studiousNav .form-inline i{
     position: absolute;
     top: 16px;
     right: 20px;
-    color: #0d369f;
-    font-size: .9rem;
+    color: var(--blue-color);
+    font-size: .93rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+#studiousNav .form-inline i:hover{
+    color: #ff6e65;
 }
 
-#studiousNav .header__theme i{
+.header__theme i{
     font-size: 1.5rem;
     transform: rotate(-25deg);
-    color: #0d369f;
+    color: var(--blue-color);
     cursor: pointer;
+    padding-top: 2px;
+}
+.header__theme i:hover{
+    color: #ff6e65;
 }
 #studiousNav .navbar-nav .dropdown-menu{
-    transform: translateX(-40px);
-    background: white;
-    border: 1px solid transparent;
+    transform: translateX(-50px);
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
     box-shadow: 0 1px 20px 0 rgba(12, 12, 12, 6%);
+    padding: 1rem 0;
 }
 #studiousNav .navbar-nav .dropdown-menu::before{
     content: '';
     width: 14px;
     height: 14px;
-    background-color: white;
-    border: 1px solid transparent;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-right: none;
     display: block;
     transform: translateX(-50%) rotateZ(45deg);
     position: absolute;
@@ -224,33 +271,123 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     position: absolute;
     top: 15px;  
 }
-/* Light Theme - Dark Theme */
-.btn:focus{
-    box-shadow: none;
-}
-#icon .fa-sun{
-    display: none;
+.navbar-toggler-icon{
+    line-height: 1.5em;
+    background-color: var(--blue-color);
+    color: white;
+    border-radius: 3px;
 }
 
-.dark#myBody {
-    background-color: #161c2d;
+/* CAROUSEL */
+.stuCarousel__banner{
+    background-image: url(../img/banner2.jpg);
+    background-position: top center;
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    padding: 7.3rem 0;
 }
-.dark #icon .fa-sun{
+.banner-2 {
+    background-image: url(../img/banner3.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+.stuCarousel__banner::before{
+    content: '';
+    background: linear-gradient(75deg, rgb(16 16 16 / 34%) 10%, rgb(230 2 100 / 0%));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.stuCarousel__bg{
+    width: 600px;
+}
+.stuCarousel__banner .stuCarousel__bg h5{
+    font-size: 4.375rem;
+    font-weight: bold;
+    color: white ;
+    z-index: 2;
+}
+.stuCarousel__banner .stuCarousel__bg button{
+    padding: 14px 30px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background: white;
+    color: #060606;
+    transition: all .25s;
+}
+.stuCarousel__banner .stuCarousel__bg button:hover{
+    color: white;
+    background-color: #ff6e65;
+}
+.owl-theme .owl-dots{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20%;
+    right: 25px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #ff6e65;
+}
+.owl-theme .owl-dots .owl-dot span{
+    padding: 6px;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #ff6e65;
+}
+/* COURSES */
+.courses{
+    position: relative;
+    margin-top: -4rem;
+}
+.courses__content .courses__bg{
+    padding: 45px 35px;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.courses__content .col-3{
+    padding: 0 10px;
+}
+.courses__content .courses__bg.color-1{
+    background-color: #037ef3;
+}
+.courses__content .courses__bg.color-2{
+    background-color: #ffc949;
+}
+.courses__content .courses__bg.color-3{
+    background-color: #ff4f81;
+}
+.courses__content .courses__bg.color-4{
+    background-color: #1ee697;
+}
+.courses__content .courses__bg i{
+    font-size: 2.6rem;
+    color: white;
+}
+.courses__content .courses__bg h4{
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
     display: block;
+    margin-bottom: 0;
 }
-.dark #icon .fa-moon{
-    display: none;
-}
-.dark .header__bot .navbar-brand span{
-    color: white;
-}
-.dark #studiousNav .navbar-nav a{
-    color: white;
-}
-.dark #studiousNav .form-inline input{
-    background-color: transparent;
-    border: 2px solid white;
-}
-.dark #studiousNav .form-inline input::placeholder{
-    color: white;
-}
+/* Responsive */
+@media (min-width: 1280px) {
+    .container {
+      max-width: 1200px;
+    }
+  }

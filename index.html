@@ -30,7 +30,9 @@
      <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <!--Đặt library trước file javascript của mình-->
-
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
     <!-- Our JS -->
     <script src="./js/main.js"></script>
@@ -73,7 +75,7 @@
                         <span>Studious</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studiousNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon fa-solid fa-bars"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="studiousNav">
                         <ul class="navbar-nav ml-auto">
@@ -107,37 +109,82 @@
                             <input class="form-control mr-sm-2" type="search" placeholder="Enter Keyword" aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </form>
-                        <!-- light theme - dark theme -->
-                        <div class="header__theme">
-                            <button class="btn" id="icon">
-                                <i class="fa-solid fa-moon"></i>
-                                <i class="fa-solid fa-sun"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- light theme - dark theme -->
+                    <div class="header__theme">
+                        <button class="btn" id="icon">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
     <!-- CAROUSEL - Nguyễn Đức Long -->
-    <section class="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
-              </div>
+    <section class="stuCarousel">
+        <div class="stuCarousel__content">
+            <div class="owl-carousel owl-theme">
+                <div class="stuCarousel__banner">
+                    <div class="stuCarousel__info">
+                        <div class="container">
+                            <div class="stuCarousel__bg">
+                                <h5>Master the Skills to Drive your Career</h5>
+                                <button class="mt-5">
+                                    Know More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="stuCarousel__banner banner-2">
+                    <div class="stuCarousel__info">
+                        <div class="container">
+                            <div class="stuCarousel__bg">
+                                <h5>Studious is the best choice for everyone</h5>
+                                <button class="mt-5">
+                                    Know More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- COURSES - Nguyễn Đức Long -->
-    <section class="courses"></section>
+    <section class="courses">
+        <div class="container">
+            <div class="courses__content row">
+                <div class="col-3">
+                    <div class="courses__bg color-1">
+                        <i class="fa-solid fa-gears"></i>
+                        <h4>Engineering & Architecture</h4>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="courses__bg color-2">
+                        <i class="fa-solid fa-book"></i>
+                        <h4>Learning Management</h4>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="courses__bg color-3">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h4>Business & Management</h4>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="courses__bg color-4">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                        <h4>Artificial Intelligence</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- STUDIOUS - Nguyễn Đức Long -->
     <section class="studious"></section>
     <!-- GET STARTED - Nguyễn Đức Long -->
@@ -154,5 +201,20 @@
     <section class="contact"></section>
     <!-- FOOTER - Nguyễn Anthony -->
     <footer></footer>
+
+
+    
+    <!-- OWL Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items:1,
+            autoplay:true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            responsiveClass: true,
+        })
+    </script>
 </body>
 </html>
