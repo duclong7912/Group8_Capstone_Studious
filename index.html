@@ -20,7 +20,7 @@
     <!-- Oxygen Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap v4 -->
@@ -110,13 +110,13 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </form>
                     </div>
-                    <!-- light theme - dark theme -->
-                    <div class="header__theme">
+                <!-- light theme - dark theme -->
+                <div class="header__theme">
                         <button class="btn" id="icon">
                             <i class="fa-solid fa-moon"></i>
                             <i class="fa-solid fa-sun"></i>
                         </button>
-                    </div>
+                </div>
                 </nav>
             </div>
         </div>
@@ -189,23 +189,412 @@
     <section class="studious py-5">
         <div class="container py-5">
             <div class="title">
-                <h3 class="title__main">
+                <h3>
                     Welcome to
                     <span>Studious</span>
                 </h3>
+            </div>
+            <div class="studious__content row">
+                <div class="studious__item col-4">
+                    <div class="studious__icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="studious__info mt-4">
+                        <a href="#">
+                            <h3>Trending Courses</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                    </div>
+                </div>
+                <div class="studious__item col-4">
+                    <div class="studious__icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="studious__info mt-4">
+                        <a href="#">
+                            <h3>Certified Teachers</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                    </div>
+                </div>
+                <div class="studious__item col-4">
+                    <div class="studious__icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="studious__info mt-4">
+                        <a href="#">
+                            <h3>Books & Library</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     </section>
     <!-- GET STARTED - Nguyễn Đức Long -->
-    <section class="getStarted"></section>
+    <section class="getStarted py-5">
+        <div class="container py-5">
+            <div class="title">
+                <h3>
+                    Pick a Course to
+                    <span>Get Started</span>
+                </h3>
+            </div>
+            <div class="getStarted__content row">
+                <div class="col-4">
+                    <div class="getStarted__item">
+                        <div class="getStarted__img position-relative">
+                            <img src="./img/c1.jpg" alt="card1" class="img-fluid">
+                            <div class="getStarted__list">
+                                <a href="#">Art</a>
+                                <a href="#">Design</a>
+                            </div>
+                            <div class="getStarted__price">
+                                <h6>$400</h6>
+                            </div>
+                        </div>
+                        <div class="getStarted__info">
+                            <div class="getStarted__head mt-3 mb-4">
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <i class="fa-solid fa-signal"></i>
+                                        Intermediate
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        10 week
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="getStarted__body">
+                                <h4>Donec sed teus enime</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="getStarted__footer">
+                                <div class="getStarted__star d-flex justify-content-between mt-5 pt-4">
+                                    <ul class="m-0">
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="details">
+                                        Know Details
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="getStarted__item">
+                        <div class="getStarted__img position-relative">
+                            <img src="./img/c2.jpg" alt="card1" class="img-fluid">
+                            <div class="getStarted__list">
+                                <a href="#">Digital</a>
+                                <a href="#">Learn</a>
+                                <a href="#">10% Off</a>
+                            </div>
+                            <div class="getStarted__price">
+                                <h6>$900</h6>
+                            </div>
+                        </div>
+                        <div class="getStarted__info">
+                            <div class="getStarted__head mt-3 mb-4">
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <i class="fa-solid fa-signal"></i>
+                                        High
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        10 week
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="getStarted__body">
+                                <h4>It's enim ad minim ate</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="getStarted__footer">
+                                <div class="getStarted__star d-flex justify-content-between mt-5 pt-4">
+                                    <ul class="m-0">
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="details">
+                                        Know Details
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="getStarted__item">
+                        <div class="getStarted__img position-relative">
+                            <img src="./img/c3.jpg" alt="card1" class="img-fluid">
+                            <div class="getStarted__list">
+                                <a href="#">Html</a>
+                                <a href="#">Java</a>
+                            </div>
+                            <div class="getStarted__price">
+                                <h6>$99</h6>
+                            </div>
+                        </div>
+                        <div class="getStarted__info">
+                            <div class="getStarted__head mt-3 mb-4">
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <i class="fa-solid fa-signal"></i>
+                                        Beginner
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        10 week
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="getStarted__body">
+                                <h4>Ullamco laboris nisi uts</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="getStarted__footer">
+                                <div class="getStarted__star d-flex justify-content-between mt-5 pt-4">
+                                    <ul class="m-0">
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="details">
+                                        Know Details
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <div class="getStarted__item">
+                        <div class="getStarted__img position-relative">
+                            <img src="./img/c4.jpg" alt="card1" class="img-fluid">
+                            <div class="getStarted__list">
+                                <a href="#">Website</a>
+                                <a href="#">Wordpress</a>
+                            </div>
+                            <div class="getStarted__price">
+                                <h6>$369</h6>
+                            </div>
+                        </div>
+                        <div class="getStarted__info">
+                            <div class="getStarted__head mt-3 mb-4">
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <i class="fa-solid fa-signal"></i>
+                                        Intermediate
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        10 week
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="getStarted__body">
+                                <h4>Donec sed teus enime</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="getStarted__footer">
+                                <div class="getStarted__star d-flex justify-content-between mt-5 pt-4">
+                                    <ul class="m-0">
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="details">
+                                        Know Details
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <div class="getStarted__item">
+                        <div class="getStarted__img position-relative">
+                            <img src="./img/c5.jpg" alt="card1" class="img-fluid">
+                            <div class="getStarted__list">
+                                <a href="#">Marketing</a>
+                                <a href="#">Edu</a>
+                            </div>
+                            <div class="getStarted__price">
+                                <h6>$499</h6>
+                            </div>
+                        </div>
+                        <div class="getStarted__info">
+                            <div class="getStarted__head mt-3 mb-4">
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <i class="fa-solid fa-signal"></i>
+                                        High
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        10 week
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="getStarted__body">
+                                <h4>It's enim ad minim ate</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="getStarted__footer">
+                                <div class="getStarted__star d-flex justify-content-between mt-5 pt-4">
+                                    <ul class="m-0">
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="details">
+                                        Know Details
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <div class="getStarted__item">
+                        <div class="getStarted__img position-relative">
+                            <img src="./img/c6.jpg" alt="card1" class="img-fluid">
+                            <div class="getStarted__list">
+                                <a href="#">Study</a>
+                                <a href="#">Accadamic</a>
+                            </div>
+                            <div class="getStarted__price">
+                                <h6>$289</h6>
+                            </div>
+                        </div>
+                        <div class="getStarted__info">
+                            <div class="getStarted__head mt-3 mb-4">
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <i class="fa-solid fa-signal"></i>
+                                        Beginner
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock"></i>
+                                        10 week
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="getStarted__body">
+                                <h4>Ullamco laboris nisi uts</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="getStarted__footer">
+                                <div class="getStarted__star d-flex justify-content-between mt-5 pt-4">
+                                    <ul class="m-0">
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+                                    </ul>
+                                    <a href="#" class="details">
+                                        Know Details
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="getStarted__button mt-5 text-center">
+                <button>
+                    Browse more courses
+                    <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </section>
     <!-- SERVICES - Nguyễn Đức Long -->
-    <section class="services"></section>
+    <section class="services mt-2 py-5">
+        <div class="container py-md-5">
+            <div class="services__content row mb-sm-3 pb-sm-5">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <div class="services__bg row">
+                        <div class="col-6">
+                            <div class="services__item d-flex align-items-center">
+                                <div class="services__icon mr-3">
+                                    <i class="fa-solid fa-hands-asl-interpreting"></i>
+                                </div>
+                                <div class="services__info">
+                                    <h5>Flexible Classes</h5>
+                                    <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="services__item d-flex align-items-center">
+                                <div class="services__icon mr-3">
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                                <div class="services__info">
+                                    <h5>Offline Mode</h5>
+                                    <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-6 mt-4 pt-md-2">
+                            <div class="services__item d-flex align-items-center">
+                                <div class="services__icon mr-3">
+                                    <i class="fa-solid fa-headphones-simple"></i>
+                                </div>
+                                <div class="services__info">
+                                    <h5>Educator Help</h5>
+                                    <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-4 pt-md-2">
+                            <div class="services__item d-flex align-items-center">
+                                <div class="services__icon mr-3">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                </div>
+                                <div class="services__info">
+                                    <h5>Online Classes</h5>
+                                    <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- NUMBER - Nguyễn Anthony-->
     <section class="number">
         <div class="container">
             <div class="title">
-                <h3 class="title__main">
+                <h3>
                     Strength in
                     <span>Numbers</span>
                 </h3>
@@ -234,6 +623,14 @@
             autoplaySpeed: 1000,
             responsiveClass: true,
         })
+    </script>
+    
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
     </script>
 </body>
 </html>
