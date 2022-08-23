@@ -27,10 +27,21 @@ body{
 #myBody{
     background-color: var(--bg-color);
 }
+/* Button Navbar */
+.navbar-toggler .fa-xmark{
+    display: none;
+}
+.stuButton .navbar-toggler .fa-xmark{
+    display: block;
+}
+.stuButton .navbar-toggler .fa-bars{
+    display: none;
+}
 /* Light Theme - Dark Theme */
 .btn:focus{
     box-shadow: none;
 }
+
 #icon .fa-sun{
     display: none;
 }
@@ -108,7 +119,6 @@ a{
     text-decoration: none;
 }
 
-
 /* HEADER */
 header{
     transition: all .4s;
@@ -116,8 +126,6 @@ header{
     background-color: transparent;
     display: grid;
     align-items: center;
-}
-.header__fixed{
     position: sticky;
     top: 0;
     left: 0;
@@ -126,7 +134,7 @@ header{
 header.nav_fixed{
     background-color: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0 0 0 / 5%);
-    height: 75px;
+    height: 70px;
     padding: 0;
     z-index: 999 !important;
 }
@@ -183,20 +191,22 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     font-size: 1.625rem;
     font-weight: 600;
     color: var(--logo--color);
-    margin-left: 3px;
     transition: all .5s;
     
 }
 .header__bot .navbar-brand span:hover{
     color: #ff6e65;
 }
-#studiousNav .nav-item{
+#stuNavbar .navbar-nav{
+    align-items: center;
+}
+#stuNavbar .nav-item{
     padding: 0 12px;
 }
-#studiousNav .nav-item.active .nav-link{
+#stuNavbar .nav-item.active .nav-link{
     color: #ff6e65;
 }
-#studiousNav .navbar-nav a{
+#stuNavbar .navbar-nav a{
     font-size: 1rem;
     padding: .5rem 0;
     color: var(--header-color) ;
@@ -205,14 +215,14 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
 }
-#studiousNav .navbar-nav .nav-link:hover{
+#stuNavbar .navbar-nav .nav-link:hover{
     color: #ff6e65;
 }
 
-#studiousNav .form-inline{
+#stuNavbar .form-inline{
     margin: 0 10px 0;
 }
-#studiousNav .form-inline input{
+#stuNavbar .form-inline input{
     font-size: 0.93rem;
     padding: 10px 45px 10px 14px;
     border-radius: 30px;
@@ -223,13 +233,14 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     font-family: 'Oxygen', sans-serif;
     background: transparent;
     color: var(--placeholder);
+    width: 100%;
 }
 
-#studiousNav .form-inline input::placeholder{
+#stuNavbar .form-inline input::placeholder{
     color: var(--placeholder);
 }
 
-#studiousNav .form-inline i{
+#stuNavbar .form-inline i{
     position: absolute;
     top: 16px;
     right: 20px;
@@ -238,7 +249,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     cursor: pointer;
     transition: all .5s;
 }
-#studiousNav .form-inline i:hover{
+#stuNavbar .form-inline i:hover{
     color: #ff6e65;
 }
 
@@ -252,14 +263,14 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 .header__theme i:hover{
     color: #ff6e65;
 }
-#studiousNav .navbar-nav .dropdown-menu{
+#stuNavbar .navbar-nav .dropdown-menu{
     transform: translateX(-50px);
     background: var(--bg-color);
     border: 1px solid var(--border-color);
     box-shadow: 0 1px 20px 0 rgba(12, 12, 12, 6%);
     padding: 1rem 0;
 }
-#studiousNav .navbar-nav .dropdown-menu::before{
+#stuNavbar .navbar-nav .dropdown-menu::before{
     content: '';
     width: 14px;
     height: 14px;
@@ -274,8 +285,11 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     left: 49%;
     z-index: 99;
 }
-#studiousNav .navbar-nav .dropdown-item{
+#stuNavbar .navbar-nav .dropdown-item{
     padding: 5px 24px;
+}
+.dropdown-menu.show{
+    display: inline-block;
 }
 
 .header__theme button{
@@ -328,7 +342,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     width: 100%;
 }
 .stuCarousel__bg{
-    width: 600px;
+    max-width: 600px;
 }
 .stuCarousel__banner .stuCarousel__bg h5{
     font-size: 4.375rem;
@@ -370,7 +384,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 /* COURSES */
 .courses{
     position: relative;
-    margin-top: -4rem;
+    margin-top: -4.5rem;
 }
 .courses__content .courses__bg{
     padding: 45px 35px;
@@ -602,11 +616,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     letter-spacing: .4px;
     margin: 0;
 }
-
-.noscroll{
-    min-height: 100vh;
-    overflow: hidden;
-} 
+ 
 /* Responsive */
 @media (min-width: 1280px) {
     .container {
@@ -616,27 +626,217 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 
 /* Mobile width < 740px */
 @media only screen and (max-width: 46.24em) {
+    /* GLOBAL */
+    .title{
+        margin-bottom: 2rem;
+    }
+    .title h3{
+        font-size: 1.8rem;
+    }
+    .title span{
+        font-size: 1.8rem;
+    }
+    .title h3::before{
+        left: -35px;
+        bottom: -8px;
+    }
+    .title h3::after{
+        left: 5px;
+        bottom: -15px;
+    }
+    /* HEADER */
     .header__top{
         display: none;
     }
     header{
-        height: 65px;
-        background-color: var(--bg-color);
-    }
-    .header__theme{
-        position: absolute;
-        top: 22px;
-        right: 50px;
+        height: 58px;
+        position: fixed;
+        width: 100%;
     }
     header.nav_fixed{
-        height: auto;
+        height: 58px;
+        padding: 0;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    }
+    .header__bot{
+        background-color: var(--bg-color);
+    }
+    header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
+        padding: 0;
+        box-shadow: none;
+    }
+    .header__bot .navbar {
         padding: 0;
     }
-}
+    .navbar .navbar-toggler {
+        position: relative;
+        right: -4%;
+    }
+    #icon{
+        position: absolute;
+        top: 16px;
+        right: 40px
+    }
+    .navbar-collapse{
+        background: var(--bg-color);
+        border: 1px solid var(--bg-color-2);
+    }
+    .navbar-collapse ul{
+        text-align: center;
+        padding: 20px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 6px 19px rgb(0 0 0 / 5%);
+        margin: 1rem 0 .5rem;
+    }
+    #stuNavbar .nav-item.active .nav-link{
+        color: var(--blue-color);
+    }
+    #stuNavbar .form-inline{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #stuNavbar .form-inline i{
+        right: 15px;
+    }
+    #stuNavbar .navbar-nav .dropdown-menu{
+        transform: translateX(0);
+        border: 1px solid var(--bg-color-2);
+    }
+    #stuNavbar .navbar-nav .nav-link:hover{
+        color: var(--blue-color);
+    }
+    #stuNavbar .navbar-nav .dropdown-item{
+        text-align: center;
+    }
+    /* Carousel */
+    .stuCarousel__banner .stuCarousel__bg h5{
+        font-size: 2.5rem;
+    }
+    .stuCarousel__banner{
+        background-position:right ;
+    }
+    .stuCarousel__bg{
+        padding-top: 155px;
+    }
+    .owl-theme .owl-dots{
+        bottom: 15%;
+    }
 
+    /* COURSES */
+    .courses__content .courses__bg h4{
+        font-size: 1.1rem;
+    }
+    /* GET STARTED */
+    .getStarted__info .getStarted__head ul{
+        font-size: .93rem;
+    }
+
+}
 
 /* Tablet width >= 740px and width < 1024px */
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.95em) {
-
+    /* GLOBAL */
+    .title{
+        margin-bottom: 3rem;
+    }
+    .title h3{
+        font-size: 2.35rem;
+    }
+    .title span{
+        font-size: 2.35rem;
+    }
+    .title h3::before{
+        left: -35px;
+        bottom: -8px;
+    }
+    .title h3::after{
+        left: 5px;
+        bottom: -15px;
+    }
+    /* HEADER */
+    .header__top{
+        display: none;
+    }
+    header{
+        height: 58px;
+        position: fixed;
+        width: 100%;
+    }
+    header.nav_fixed{
+        height: 58px;
+        padding: 0;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    }
+    .header__bot{
+        background-color: var(--bg-color);
+    }
+    header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
+        padding: 0;
+        box-shadow: none;
+    }
+    .header__bot .navbar {
+        padding: 0;
+    }
+    .navbar .navbar-toggler {
+        position: relative;
+        right: -2%;
+    }
+    #icon{
+        position: absolute;
+        top: 16px;
+        right: 50px
+    }
+    .navbar-collapse{
+        background: var(--bg-color);
+        border: 1px solid var(--bg-color-2);
+    }
+    .navbar-collapse ul{
+        text-align: center;
+        padding: 20px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 6px 19px rgb(0 0 0 / 5%);
+        margin: 1rem 0 .5rem;
+    }
+    #stuNavbar .nav-item.active .nav-link{
+        color: var(--blue-color);
+    }
+    #stuNavbar .form-inline{
+        width: 33%;
+        margin: 0 auto;
+    }
+    #stuNavbar .form-inline i{
+        right: 20px;
+    }
+    #stuNavbar .navbar-nav .dropdown-menu{
+        transform: translateX(0);
+        border: 1px solid var(--bg-color-2);
+    }
+    #stuNavbar .navbar-nav .nav-link:hover{
+        color: var(--blue-color);
+    }
+    #stuNavbar .navbar-nav .dropdown-item{
+        text-align: center;
+    }
+    /* Carousel */
+    .stuCarousel__banner .stuCarousel__bg h5{
+        font-size: 2.8rem;
+    }
+    .stuCarousel__banner{
+        background-position:right ;
+    }
+    .stuCarousel__bg{
+        padding-top: 230px;
+    }
+    .owl-theme .owl-dots{
+        bottom: 15%;
+    }
+    /* COURSES */
+    .courses__content .courses__bg h4{
+        font-size: 1.1rem;
+    }
+    /* GET STARTED */
+    .getStarted__info .getStarted__head ul{
+        font-size: .93rem;
+    }
 }

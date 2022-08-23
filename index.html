@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Cantarell Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap v4 -->
@@ -71,52 +75,53 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg stroke">
                     <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img src="./img/logo.png" alt="logo">
+                        <img src="./img/logo.png" alt="logo" class="mr-1">
                         <span>Studious</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studiousNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+                    <button id="stuButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stuNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+                      <span class="navbar-toggler-icon fa-solid fa-xmark"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="studiousNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">COURSES</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                PAGES
-                                    <span class="fa-solid fa-chevron-down"></span>
-                                </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">BLOG POSTS</a>
-                                <a class="dropdown-item" href="#">BLOG SINGEL</a>
-                                <a class="dropdown-item" href="#">404 PAGE</a>
-                                <a class="dropdown-item" href="#">EMAIL TEMPLATE</a>
-                                <a class="dropdown-item" href="#">LANDING PAGE</a>
-                                <a class="dropdown-item" href="#">SHORTCODES</a>               
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">CONTACT US</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0 position-relative">
+                  
+                    <div class="collapse navbar-collapse" id="stuNavbar">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COURSE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                            <span class="fa-solid fa-chevron-down"></span>
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">BLOG POSTS</a>
+                            <a class="dropdown-item" href="#">BLOG SINGEL</a>
+                            <a class="dropdown-item" href="#">404 PAGE</a>
+                            <a class="dropdown-item" href="#">EMAIL TEMPLATE</a>
+                            <a class="dropdown-item" href="#">LANDING PAGE</a>
+                            <a class="dropdown-item" href="#">SHORTCODES</a> 
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                        <form class="form-inline position-relative">
                             <input class="form-control mr-sm-2" type="search" placeholder="Enter Keyword" aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </form>
+                          </form>
+                      </ul>
                     </div>
-                <!-- light theme - dark theme -->
-                <div class="header__theme">
-                        <button class="btn" id="icon">
-                            <i class="fa-solid fa-moon"></i>
-                            <i class="fa-solid fa-sun"></i>
-                        </button>
-                </div>
+                    <!-- light theme - dark theme -->
+                    <div id="icon" class="header__theme">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -130,7 +135,7 @@
                         <div class="container">
                             <div class="stuCarousel__bg">
                                 <h5>Master the Skills to Drive your Career</h5>
-                                <button class="mt-5">
+                                <button class="mt-4 mt-sm-5">
                                     Know More
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
@@ -143,7 +148,7 @@
                         <div class="container">
                             <div class="stuCarousel__bg">
                                 <h5>Studious is the best choice for everyone</h5>
-                                <button class="mt-5">
+                                <button class="mt-4 mt-sm-5">
                                     Know More
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
@@ -158,25 +163,25 @@
     <section class="courses pb-lg-5">
         <div class="container">
             <div class="courses__content row">
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3 mt-3 px-lg-2">
                     <div class="courses__bg color-1">
                         <i class="fa-solid fa-gears"></i>
                         <h4>Engineering & Architecture</h4>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3 mt-3 px-lg-2">
                     <div class="courses__bg color-2">
                         <i class="fa-solid fa-book"></i>
                         <h4>Learning Management</h4>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3 mt-3 px-lg-2">
                     <div class="courses__bg color-3">
                         <i class="fa-solid fa-mug-saucer"></i>
                         <h4>Business & Management</h4>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3 mt-3 px-lg-2">
                     <div class="courses__bg color-4">
                         <i class="fa-solid fa-hourglass-half"></i>
                         <h4>Artificial Intelligence</h4>
@@ -187,7 +192,7 @@
     </section>
     <!-- STUDIOUS - Nguyễn Đức Long -->
     <section class="studious py-5">
-        <div class="container py-5">
+        <div class="container py-4 py-md-5">
             <div class="title">
                 <h3>
                     Welcome to
@@ -195,7 +200,7 @@
                 </h3>
             </div>
             <div class="studious__content row">
-                <div class="studious__item col-4">
+                <div class="studious__item col-12 col-md-6 col-lg-4">
                     <div class="studious__icon">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
@@ -206,7 +211,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                     </div>
                 </div>
-                <div class="studious__item col-4">
+                <div class="studious__item col-12 col-md-6 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                     <div class="studious__icon">
                         <i class="fa-solid fa-users"></i>
                     </div>
@@ -217,7 +222,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                     </div>
                 </div>
-                <div class="studious__item col-4">
+                <div class="studious__item col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
                     <div class="studious__icon">
                         <i class="fa-solid fa-book"></i>
                     </div>
@@ -234,7 +239,7 @@
     </section>
     <!-- GET STARTED - Nguyễn Đức Long -->
     <section class="getStarted py-5">
-        <div class="container py-5">
+        <div class="container py-lg-5 py-4 py-md-5">
             <div class="title">
                 <h3>
                     Pick a Course to
@@ -242,7 +247,7 @@
                 </h3>
             </div>
             <div class="getStarted__content row">
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="getStarted__item">
                         <div class="getStarted__img position-relative">
                             <img src="./img/c1.jpg" alt="card1" class="img-fluid">
@@ -289,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mt-5 mt-md-0">
                     <div class="getStarted__item">
                         <div class="getStarted__img position-relative">
                             <img src="./img/c2.jpg" alt="card1" class="img-fluid">
@@ -337,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mt-5">
                     <div class="getStarted__item">
                         <div class="getStarted__img position-relative">
                             <img src="./img/c3.jpg" alt="card1" class="img-fluid">
@@ -384,7 +389,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-12 col-md-6 col-lg-4 mt-lg-5 mt-5">
                     <div class="getStarted__item">
                         <div class="getStarted__img position-relative">
                             <img src="./img/c4.jpg" alt="card1" class="img-fluid">
@@ -431,7 +436,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-12 col-md-6 col-lg-4 mt-lg-5 mt-5">
                     <div class="getStarted__item">
                         <div class="getStarted__img position-relative">
                             <img src="./img/c5.jpg" alt="card1" class="img-fluid">
@@ -478,7 +483,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-12 col-md-6 col-lg-4 mt-lg-5 mt-5">
                     <div class="getStarted__item">
                         <div class="getStarted__img position-relative">
                             <img src="./img/c6.jpg" alt="card1" class="img-fluid">
@@ -539,9 +544,9 @@
         <div class="container py-md-5">
             <div class="services__content row mb-sm-3 pb-sm-5">
                 <div class="col-4"></div>
-                <div class="col-8">
+                <div class="col-lg-8 col-12 py-4 py-lg-0">
                     <div class="services__bg row">
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <div class="services__item d-flex align-items-center">
                                 <div class="services__icon mr-3">
                                     <i class="fa-solid fa-hands-asl-interpreting"></i>
@@ -552,7 +557,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 mt-4 mt-md-0 mt-lg-0">
                             <div class="services__item d-flex align-items-center">
                                 <div class="services__icon mr-3">
                                     <i class="fa-solid fa-download"></i>
@@ -563,7 +568,7 @@
                                 </div>
                             </div>
                         </div> 
-                        <div class="col-6 mt-4 pt-md-2">
+                        <div class="col-md-6 mt-4 pt-md-2">
                             <div class="services__item d-flex align-items-center">
                                 <div class="services__icon mr-3">
                                     <i class="fa-solid fa-headphones-simple"></i>
@@ -574,7 +579,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 mt-4 pt-md-2">
+                        <div class="col-md-6 mt-4 pt-md-2">
                             <div class="services__item d-flex align-items-center">
                                 <div class="services__icon mr-3">
                                     <i class="fa-solid fa-circle-play"></i>
@@ -625,12 +630,5 @@
         })
     </script>
     
-    <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
-        });
-    </script>
 </body>
 </html>
