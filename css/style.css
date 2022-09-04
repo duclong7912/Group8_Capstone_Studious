@@ -26,6 +26,7 @@ body{
     --border-color-2: #eee;
     --box-shadow-color: rgb(4 20 69 / 10%);
     --secondary-color: #FF6E65
+   
 }
 #myBody{
     background-color: var(--bg-color);
@@ -905,7 +906,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 .timer {
     font-size: 46px;
     font-weight: 600;
-    color: var(--heading-color);
+    color: var(--header-color);
 }
 .count-text {
     margin: 0;
@@ -914,7 +915,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     line-height: 28px;
     letter-spacing: .4px;
     text-transform: uppercase;
-    color: var(--heading-color);
+    color: var(--header-color);
 }
 
 @media only screen and (max-width: 991px) {
@@ -942,7 +943,7 @@ p.count-text {
     padding-right: 15px;
 }
 .feedback .testimonials_grid {
-    background: var(--bg-color);
+    background: var(--bg-color-2);
     border-radius: 4px;
     box-shadow: 0 20px 62px var(--box-shadow-color);
     padding: 2rem;
@@ -977,6 +978,7 @@ q::after {
 .feedback .testi_grid h5 {
     font-weight: 600;
     line-height: 16px;
+    color: var(--header-color);
 }
 .feedback .testi_grid p {
     font-size: 13px;
@@ -1053,16 +1055,15 @@ q::after {
 .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";
 }
-.fa-facebook-f:before, .fa-facebook:before {
-    content: "ï‚š";
-}
+
 h5.member a {
     font-weight: 600;
-    color: var(--heading-color);
+    color: var(--header-color);
 }
 small, .small {
     font-size: 80%;
     font-weight: 400;
+    color: var(--font--color);
 }
 /* CONTACT */
 
@@ -1078,6 +1079,7 @@ h3.title-style {
     font-size: 35px;
     font-weight: 600;
     line-height: 45px;
+    color: var(--header-color);
 }
 
     .btn-style {
@@ -1122,7 +1124,7 @@ h3.title-style {
 .footer__form h4.title-head {
     font-size: 35px;
     line-height: 40px;
-    color: var(--heading-color);
+    color: var(--header-color);
     font-weight: 600;
 }
 .footer__form .main-midd p {
