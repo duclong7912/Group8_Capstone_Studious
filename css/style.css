@@ -26,7 +26,7 @@ body{
     --border-color-2: #eee;
     --box-shadow-color: rgb(4 20 69 / 10%);
     --secondary-color: #FF6E65
-   
+    
 }
 #myBody{
     background-color: var(--bg-color);
@@ -438,7 +438,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     margin-top: -4.5rem;
 }
 .courses__content .courses__bg{
-    padding: 45px 35px;
+    padding: 45px 45px;
     border-radius: .5rem;
     position: relative;
     z-index: 1;
@@ -495,7 +495,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 .studious__content .studious__info a h3{
     font-weight: 600;
     color: var(--header-color);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 34px;
 }
 .studious__content .studious__info a h3:hover{
@@ -582,7 +582,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 }
 .getStarted__body h4{
     color: var(--header-color);
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     margin-bottom: 10px;
     font-weight: 600;
     text-shadow: none;
@@ -593,7 +593,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     color: #ff6e65;
 }
 .getStarted__body p{
-    font-size: .93rem;
+    font-size: 1rem;
     color: var(--font--color);
 }
 .getStarted__star{
@@ -621,7 +621,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     padding: 14px 30px;
     background-color: #ff6e65;
     font-weight: 600;
-    font-size: .9rem;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
     color: white;
@@ -654,7 +654,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     border-radius: 50%;
 }
 .services__item .services__info h5{
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     line-height: 30px;
     font-weight: 600;
     margin-bottom: 6px;
@@ -662,7 +662,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 }
 .services__item .services__info p{
     line-height: 28px;
-    font-size: .93rem;
+    font-size: 1rem;
     color: var(--font--color);
     letter-spacing: .4px;
     margin: 0;
@@ -751,7 +751,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     }
     #stuNavbar .navbar-nav .dropdown-menu{
         transform: translateX(0);
-        border: 1px solid var(--bg-color-2);
+        border: 1px solid var(--border-color-2);
     }
     #stuNavbar .navbar-nav .nav-link:hover{
         color: var(--blue-color);
@@ -858,7 +858,7 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     }
     #stuNavbar .navbar-nav .dropdown-menu{
         transform: translateX(0);
-        border: 1px solid var(--bg-color-2);
+        border: 1px solid var(--border-color-2);
     }
     #stuNavbar .navbar-nav .nav-link:hover{
         color: var(--blue-color);
@@ -1052,9 +1052,9 @@ q::after {
     font-size: inherit;
     text-rendering: auto;
 }
-.fa-facebook-f:before, .fa-facebook:before {
+/* .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";
-}
+} */
 
 h5.member a {
     font-weight: 600;
