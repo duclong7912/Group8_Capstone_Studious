@@ -759,6 +759,11 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     #stuNavbar .navbar-nav .dropdown-item{
         text-align: center;
     }
+    #stuNavbar .navbar-nav .dropdown-menu::before{
+        border: 1px solid var(--border-color-2);
+        border-bottom: none;
+        border-right: none;
+    }
     /* Carousel */
     .stuCarousel__banner .stuCarousel__bg h5{
         font-size: 2.5rem;
@@ -865,6 +870,11 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
     }
     #stuNavbar .navbar-nav .dropdown-item{
         text-align: center;
+    }
+    #stuNavbar .navbar-nav .dropdown-menu::before{
+        border: 1px solid var(--border-color-2);
+        border-bottom: none;
+        border-right: none;
     }
     /* Carousel */
     .stuCarousel__banner .stuCarousel__bg h5{
