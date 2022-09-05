@@ -339,6 +339,10 @@ header.nav_fixed nav.navbar.navbar-expand-lg.stroke{
 #stuNavbar .navbar-nav .dropdown-item{
     padding: 5px 24px;
 }
+#stuNavbar .navbar-nav .dropdown-item:hover{
+    background-color: transparent;
+    color: #ff6e65;
+}
 .dropdown-menu.show{
     display: inline-block;
 }
